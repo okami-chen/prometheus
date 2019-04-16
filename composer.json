@@ -1,0 +1,34 @@
+{
+    "name": "okami-chen/prometheus",
+    "authors": [
+        {
+            "name": "eward",
+            "email": "x25125x@126.com"
+        }
+    ],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "jimdo/prometheus_client_php": "~0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "OkamiChen\\Prometheus\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OkamiChen\\Prometheus\\LaravelProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "prefer-stable": true
+}
